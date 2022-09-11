@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./estilos/inicio.css">
+    <link rel="shortcut icon" href="https://img.icons8.com/bubbles/344/restaurant.png" type="image/x-icon">
+
+    <title>D.A.E</title>
+</head>
+
+<body>
+    <header>
+        <h1>D.A.E</h1>
+
+        <nav>
+            <ul>
+                <li class="link-seleccionado"><a href="inicio.html">Inicio</a></li>
+                <li><a href="iniciarsesion.html">Iniciar sesión</a></li>
+                <li><a href="Registrar.html">Registrate</a></li>
+                <li><a href="#">Info D.A.E</a></li>
+                <li><a href="ayuda.html">Ayuda</a></li>
+                <li><a href="galeria.html">Galeria</a></li>
+                <li><a href="#">Listados</a></li>
+            </ul>
+        </nav>
+        <div class="nav-bar" id="nav-bar"><i class="fa-solid fa-bars"></i></div>
+    </header>
+
+    <section id="inicio">
+        <div class="contenido">
+            <div class="info">
+                <h3>D.A.E</h3>
+                <span>Distribucion Alimentaria Estudiantil</span>
+            
+            </div>
+
+        </div>
+        <div class="contenedor-img">
+           <img src="https://www.portafolio.co/files/article_multimedia/uploads/2017/12/03/5a241e4789cbf.jpeg" alt="">
+        </div>
+    </section>
+
+    <script>
+        let nav_var = document.getElementById("nav-bar");
+        let menu_responsive = "oculto";
+
+        nav_var.onclick = function () {
+            if (menu_responsive == "oculto") {
+                document.querySelector("nav").className = "active";
+                menu_responsive = "visible"
+            } else {
+                document.querySelector("nav").className = "";
+                menu_responsive = "oculto";
+            }
+        }
+    </script>
+</body>
+
+</html>
